@@ -1,0 +1,142 @@
+Circuit Connection Details for Ultrasonic Distance Indicator
+1. ATtiny13A
+
+Power Supply
+
+VCC (Pin 8) → +5V
+
+GND (Pin 4) → Ground
+
+HC-SR04 Connections
+
+VCC → +5V
+
+GND → Ground
+
+TRIG → PB0 (Pin 5)
+
+ECHO → PB1 (Pin 6)
+
+LED Connection
+
+Anode (+) → PB2 (Pin 7)
+
+Cathode (–) → 220Ω Resistor → Ground
+
+Notes
+
+Use a common ground for all components
+
+Use a stable 5V supply
+
+Place a decoupling capacitor near ATtiny13A
+
+Keep the echo wire short to reduce noise
+
+2. ATmega16A
+
+Power Supply
+
+VCC (Pins 10, 30) → +5V
+
+GND (Pins 11, 31) → Ground
+
+HC-SR04 Connections
+
+VCC → +5V
+
+GND → Ground
+
+TRIG → PD0 (Pin 22)
+
+ECHO → PD1 (Pin 23)
+
+LED Connection
+
+Anode (+) → PD2 (Pin 24)
+
+Cathode (–) → 220Ω Resistor → Ground
+
+Notes
+
+Common ground required
+
+Use decoupling capacitor near ATmega16A
+
+Keep echo wire short for accurate pulse reading
+
+3. ATmega32A
+
+Power Supply
+
+VCC (Pins 10, 30) → +5V
+
+GND (Pins 11, 31) → Ground
+
+HC-SR04 Connections
+
+VCC → +5V
+
+GND → Ground
+
+TRIG → PD0 (Pin 22)
+
+ECHO → PD1 (Pin 23)
+
+LED Connection
+
+Anode (+) → PD2 (Pin 24)
+
+Cathode (–) → 220Ω Resistor → Ground
+
+Notes
+
+Same as ATmega16A
+
+More I/O pins available for extended functionality
+
+Decoupling capacitor recommended
+
+4. Arduino (Uno / Nano)
+
+Power Supply
+
+5V → +5V
+
+GND → Ground
+
+HC-SR04 Connections
+
+VCC → +5V
+
+GND → Ground
+
+TRIG → D2
+
+ECHO → D3
+
+LED Connection
+
+Anode (+) → D4
+
+Cathode (–) → 220Ω Resistor → Ground
+
+Notes
+
+Simplified wiring using Arduino digital pins
+
+Ideal for beginners and rapid prototyping
+
+Keep wires short to reduce signal noise
+
+✅ General Notes for All Controllers
+
+Use a common ground for all components
+
+Ensure stable 5V power supply
+
+Place a 0.1µF decoupling capacitor near each microcontroller
+
+Keep HC-SR04 echo wire short to avoid false readings
+
+LED current-limiting resistor is mandatory
